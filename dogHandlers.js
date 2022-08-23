@@ -56,7 +56,7 @@ const getDogById = (req, res) => {
 const getWelcomePage = (req, res) => {
     let text = `<h1>The Dogs API </h1> 
     <h2>base url: http://localhost:5000/api/</h2>
-    <ul> <strong>USERS ENDPOINT</strong>
+    <ul> <strong>USER ENDPOINTS</strong>
         <li>GET /dogs    - Return list of dogs</li>
         <li>GET /dogs/id - Return dog by id</li>
     </ul>
