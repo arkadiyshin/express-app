@@ -54,19 +54,23 @@ const getDogById = (req, res) => {
 }
 
 const getWelcomePage = (req, res) => {
-    let text = `<h1>The Dogs API</h1> <br>
-    <em>base url: http://localhost:5000/api/ </em><br> 
-    
-    <ul> <strong>endpoints</strong>
-        <li>dogs: list of dogs (default limit ${LIMIT_DEFAULT})</li>
-        <li>dogs/:id: dog by Id</li>
+    let text = `<h1>The Dogs API </h1> 
+    <h2>base url: http://localhost:5000/api/</h2>
+    <ul> <strong>USERS ENDPOINT</strong>
+        <li>GET /dogs    - Return list of dogs</li>
+        <li>GET /dogs/id - Return dog by id</li>
     </ul>
 
-    <ul> <strong>filters</strong>`
+    <ul> <strong>PARAMS</strong>
+        <li>limit - [optional]number of results to return (default value ${LIMIT_DEFAULT})</li>
+        <li>page  - [optional] paginate through results</li>
+    </ul>
+
+    <ul> <strong>FILTERS</strong>`
     text = LIST_OF_FILTERS.reduce( (text, filter) => {
         return text+=`<li> ${filter} </li>`;
     }, text);
-    text+='</ul>';
+    text+=`</ul>`;
     res.send(text);
 };
 
