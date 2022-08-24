@@ -1,6 +1,5 @@
 import express from 'express';
 import dogHandlers from './dogHandlers.js';
-import { LIMIT_DEFAULT, LIST_OF_FILTERS } from './data.js';
 
 const app = express();
 const port = 5000;
