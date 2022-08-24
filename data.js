@@ -1,6 +1,14 @@
 export const LIMIT_DEFAULT = 10;
-export const LIST_OF_FILTERS = ['name', 'breed_group', 'temperament', 'origin', 'country_code'];
+export const LIST_OF_FILTERS =
+    [
+        'name', 
+        'breed_group', 
+        'temperament', 
+        'origin', 
+        'country_code',
+    ];
 
+    
 const dogs =
     [
         {
