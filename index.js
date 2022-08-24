@@ -2,7 +2,7 @@ import express from 'express';
 import dogHandlers from './dogHandlers.js';
 
 const app = express();
-const port = 5000;
+const port = process.env.port || 5000;
 
 app.get("/", dogHandlers.getWelcomePage);
 app.get("/api/dogs", dogHandlers.getDogs);
