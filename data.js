@@ -1,5 +1,5 @@
-export const LIMIT_DEFAULT = 10;
-export const LIST_OF_FILTERS =
+const LIMIT_DEFAULT = 10;
+const LIST_OF_FILTERS =
     [
         'name', 
         'breed_group', 
@@ -2321,4 +2321,4 @@ const dogs =
         }
     ];
 
-export default dogs;
+export {dogs as default, LIMIT_DEFAULT, LIST_OF_FILTERS };
